@@ -1,0 +1,9 @@
+server:
+  port: 8081
+upstream:
+  provider:
+    serviceAddr: 127.0.0.1
+    servicePort: 8080
+  grpcProvider:
+    serviceAddr: 127.0.0.1
+    servicePort: 8888

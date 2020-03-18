@@ -1,0 +1,18 @@
+syntax = "proto3";
+package testproto;
+option java_package = "com.foxmail.chwetion.istiodemo.grpc.getmessage";
+option java_outer_classname = "GetMessageProto";
+
+message GetMessageRequest {
+    int32 sleepTime = 1;
+    int32 code = 2;
+}
+
+message GetMessageResponse {
+    string message = 1;
+    string code = 2;
+}
+
+service GetMessage {
+    rpc getMessage(GetMessageRequest) returns (GetMessageResponse);
+}

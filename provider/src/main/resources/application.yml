@@ -1,0 +1,6 @@
+server:
+  port: 8080
+upstream:
+  nextprovider:
+    serviceAddr: 127.0.0.1
+    servicePort: 8079
