@@ -98,6 +98,7 @@ public class ConsumerController {
             sb.append("<br>");
         }
         sb.insert(0, "线程数：" + conCount + " 调用次数：" + results.size() + "<br>");
+        executorService.shutdown();
         return sb.toString();
     }
 
